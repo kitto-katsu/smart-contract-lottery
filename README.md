@@ -1,66 +1,36 @@
-## Foundry
+# RAFFLE CONTRACTS
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+## About
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This code is to create proveably random smart contracts raffles.
 
-## Documentation
 
-https://book.getfoundry.sh/
+## What does it do?
 
-## Usage
+1. Users can join the lottery by buying a ticket.
+    - Ticket fees will go to the winner
+    
+2. After X period of time a winner will be chosen.
+    - The winner is automatically drawn
+    - The winner is chosen programatically (random)
+    - The lottery will be closed during the draw
 
-### Build
+3. Using Chainlink VRF and Chainlink Automation.
+    - Chainlink VRF ensures randomness when a winner is chosen
+    - Chainlink Automation serves as a time based trigger
 
-```shell
-$ forge build
-```
 
-### Test
+## Credits
 
-```shell
-$ forge test
-```
+This code is part of Patrick Collins' Cyfrin course. 
+Changes I have made are purely for my own educational purposes as I am trying to navigate Solidity.
 
-### Format
+Feel free to follow or donate to Patrick
 
-```shell
-$ forge fmt
-```
+ETH/Arbitrum/Optimism/Polygon/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
+[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
+[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
+[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
